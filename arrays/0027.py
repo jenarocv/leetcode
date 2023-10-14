@@ -1,5 +1,5 @@
 class Solution:
-    def removeElement(self, nums, val) -> int:
+    def removeElement(self, nums, val):
         l = 0
         for r in range(0, len(nums)):
             if nums[r] != val:
