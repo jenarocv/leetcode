@@ -1,12 +1,12 @@
 class Solution:
-    def twoSum(self, nums, target):
-        prevMap = {}  # val -> index
+    def two_sum(self, nums, target):
+        prev_map = {}  # val -> index
 
         for i, n in enumerate(nums):
             diff = target - n
-            if diff in prevMap:
-                return [prevMap[diff], i]
-            prevMap[n] = i
+            if diff in prev_map:
+                return [prev_map[diff], i]
+            prev_map[n] = i
 
 
-print(Solution().twoSum([2, 7, 11, 15], 9))
+print(Solution().two_sum([2, 7, 11, 15], 9))
